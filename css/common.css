@@ -4,13 +4,21 @@
 
 body {
   margin: 16px;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
-    Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background-color: #fafafa;
   color: #212121;
   line-height: 1.5;
+
+  background-color: #a3b1c6;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
 }
 
 input {
@@ -21,4 +29,266 @@ input {
 button {
   padding: 8px 12px;
   cursor: pointer;
+}
+
+/* стилі для таск-01 */
+.item:last-child {
+  margin-bottom: 0px;
+}
+.btn {
+  display: inline-block;
+  padding: 8px 12px;
+  background-color: #008cba;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 4px;
+}
+.btn:hover {
+  background-color: #e24e0a;
+}
+
+.item {
+  max-width: 400px;
+  margin: 16px 0;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 16px;
+}
+
+.title {
+  margin: 0;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.sublist {
+  margin: 8px 0;
+  padding: 0;
+}
+
+.subitem {
+  list-style: none;
+  margin: 4px 0;
+  padding: 4px;
+  background-color: #f2f2f2;
+  border-radius: 4px;
+  border: 1px solid #ddd;
+}
+/* стилы для таск-03 */
+
+.gallery {
+	justify-content: center;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.gallery li {
+  width: 400px;
+  height: 400px;
+  margin: 10px;
+  overflow: hidden;
+  position: relative;
+}
+
+.gallery img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s;
+}
+
+.gallery li:hover img {
+  transform: scale(1.1);
+}
+
+/* Стилі для лічильника тск-04 */
+#counter button {
+  background-color: #528bff;
+  color: #ffffff;
+  border: none;
+  border-radius: 5px;
+  padding: 20px;
+  margin: 0 20px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+
+#counter button:hover {
+  background-color: #eb5f0f;
+}
+
+#counter span {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+/* стилі для таск-05 */
+
+#name-input {
+  outline: none;
+  border: 1px solid rgb(255, 255, 255);
+  border-radius: 5px;
+  border-radius: 10px;
+  background-color: #ececec;
+  box-shadow: 0px 8px 15px rgb(0 0 0 / 10%);
+}
+
+/* стилі для таск-06 */
+#validation-input {
+  display: block;
+  margin: 0 auto;
+  padding: 15px;
+  border-radius: 30px;
+  width: 240px;
+  font-size: 16px;
+	outline: none;
+  background-color: #ffffff;
+  box-shadow: inset 2px 2px 5px #d0d1d6, inset -5px -5px 10px #e4e4e4;
+  text-shadow: 1px 1px 0 #fff;
+  letter-spacing: 1px;
+}
+/* стилы для таск-07 */
+#font-size-control {
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+}
+input[type="range"] {
+  background-color: transparent;
+  border-radius: 0.75em;
+  box-shadow: -0.1em -0.1em 0.1em #4400ff inset, 0.1em 0.1em 0.1em #ff3300 inset;
+  cursor: pointer;
+  transform: rotate(360deg);
+  height: 1.5em;
+  width: 20em;
+  appearance: none;
+}
+
+.abracada {
+  font-size: 55px;
+  text-align: center;
+  color: #161a1fd0;
+  filter: drop-shadow(3px 3px 2px #a3b1c6) drop-shadow(-3px -3px 2px #ffffff);
+}
+
+/* стилі для таск-08 */
+
+.login-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 20px auto;
+  max-width: 400px;
+}
+
+label {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+label input {
+  padding: 10px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+}
+
+label input:focus {
+  outline: none;
+  box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+}
+
+.input-btn {
+  padding: 8px 20px;
+  font-size: 16px;
+  color: white;
+  background-color: #346dd6;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.input-btn:hover {
+  background-color: #d3651c;
+}
+/* стилі для таск-09 */
+
+.change-color {
+  border-radius: 20px;
+  border: 1px solid;
+  background-color: transparent;
+}
+/* стилі для таск-10 */
+
+#controls {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+input[type="number"] {
+  font-size: 16px;
+  color: #222;
+  background-color: #f8f8f8;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 6px 8px;
+  width: 60px;
+  box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.1);
+}
+
+button[data-create],
+button[data-destroy] {
+  font-size: 16px;
+  color: #fff;
+  background-color: #4c90af;
+  border: none;
+  border-radius: 4px;
+  padding: 6px 12px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+  box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.1);
+}
+
+button[data-create]:hover,
+button[data-destroy]:hover {
+  background-color: #e6641a;
+  box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.3);
+}
+
+/* button */
+.floating-button {
+  text-decoration: none;
+  display: inline-block;
+	padding: 5px 20px;
+  line-height: 45px;
+  border-radius: 45px;
+  margin: 10px 20px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 11px;
+  text-transform: uppercase;
+  text-align: center;
+  letter-spacing: 3px;
+  font-weight: 600;
+  color: #524f4e;
+  background: white;
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+  transition: 0.3s;
+}
+
+.floating-button:hover {
+  background: #2ee59d;
+  box-shadow: 0 15px 20px rgba(46, 229, 157, 0.4);
+  color: white;
+  transform: translateY(-7px);
 }

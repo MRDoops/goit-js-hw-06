@@ -19,25 +19,25 @@
 
       .login-form input,
       .login-form button {
-        width: 100%;
-        padding: 4px;
+        /* width: 100%; */
+        /* padding: 4px; */
         font: inherit;
       }
     </style>
   </head>
   <body>
-    <p><a href="index.html">Go back</a></p>
+    <p><a class="floating-button" href="index.html">Go back</a></p>
 
     <form class="login-form">
       <label>
         Email
-        <input type="email" name="email" />
+        <input class="input-field" type="email" name="email" />
       </label>
       <label>
         Password
-        <input type="password" name="password" />
+        <input class="input-field" type="password" name="password" />
       </label>
-      <button type="submit">Login</button>
+      <button class="input-btn" type="submit">Login</button>
     </form>
 
     <script src="js/task-08.js" type="module"></script>
